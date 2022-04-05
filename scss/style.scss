@@ -224,92 +224,209 @@ body{
 .shop{
   padding: 30px 0;
   &__inner{
-    max-width: 235px;
-    background-color: #fff;
-    opacity: 0.6;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__filters{
+    max-width: 230px;
+  }
+  &-menu{
+    position: relative;
+  }
+  &-menu__list{
+    background: #fff;
+    opacity: 0.7;
     border-radius: 0px 0px 5px 5px;
   }
-  &__top {
-    display: flex;
-  }
-  &__title {
-    width: 185px;
-    border-radius: 5px 0px 0px 0px;
-    font-size: 26px;
+  &-menu__category{
+    background-color: $link;
+    color: #fff;
+    font-size: 22px;
     line-height: 36px;
     text-transform: uppercase;
-    background-color: #ff7300eb;
-    opacity: 1;
-    color: #000;
     padding: 10px 0px 10px 20px;
-  } 
-  &__btn {
-    border-radius: 0px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+  }
+  &-menu__btn{
+    position: absolute;
+    top: 0;
+    right: 0;
     border: none;
     border-left: 2px solid #fff;
-    background-color: #ff7300eb;
-    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: $link;
+    padding: 17px 25px;
+    cursor: pointer;
+    opacity: 0.5;
   }
   &-menu__list-item{
     border-bottom: 1px solid #ccc;
-    padding: 15px 0px 10px 15px;
+    padding: 15px 0px 10px 20px;
   }
   &-menu__list-item--link{
     color: #000;
     @extend %roboto-700;
+    font-size: 16px;
     text-transform: uppercase;
   }
-  &-contacts{
-    max-width: 235px;
-    background-color: #fff;
-    opacity: 0.6;
-    border-radius: 5px;
-  }
-  &-contacts__list{
-    position: relative;
-  }
-  &-contacts__list-item{
-    margin: 0px 0px 10px 30px;
-    max-width: 160px;
-  }
-  &-contacts__list-dot,
-  &-contacts__list-phone,
-  &-contacts__list-mail{
-    line-height: 24px;
-    color: #000;
-    
-  }
-  &-contacts__dot,
-  &-contacts__phone,
-  &-contacts__phone--icon,
-  &-contacts__mail{
-    position: absolute;
-    left: 10px;
-    width: 15px;
-    height: 15px;
-    stroke: #000;
-  }
-  &-contacts__dot{
-    top: 8px;
-  }
-  &-contacts__phone{
-    top: 68px;
-  }
-  &-contacts__phone--icon{
-    top: 130px;
-  }
-  &-contacts__mail{
-    top: 192px;
-  }
-  &-contacts__title{
+}
+
+.shop-contacts{
+  margin-top: 25px;
+  padding-bottom: 10px;
+  max-width: 230px;
+  background-color: #fff;
+  opacity: 0.7;
+  border-radius: 5px;
+  &__title{
     margin-top: 15px;
-    padding: 10px 0px 10px 10px;
+    font-size: 22px;
+    line-height: 32px;
+    padding: 15px 0px 5px 20px;
     color: #000;
     @extend %roboto-700;
     text-transform: uppercase;
     border-bottom: 1px solid #000;
   }
+  &__list{
+    position: relative;
+  }
+  &__list-item{
+    max-width: 150px;
+    margin: 5px 0px 10px 35px;
+    line-height: 0;
+  }
+  &__list-dot,
+  &__list-phone,
+  &__list-mail{
+    color: #000;
+  }
+  &__dot,
+  &__phone,
+  &__phone--icon,
+  &__mail{
+    position: absolute;
+    left: 8px;
+    width: 15px;
+    height: 15px;
+    stroke: #000;
+  }
+  &__dot{
+    top: 3px;
+  }
+  &__phone{
+    top: 62px;
+  }
+  &__phone--icon{
+    top: 120px;
+  }
+  &__mail{
+    top: 178px;
+  }
 }
+
+.shop-content {
+  background-color: rgba(255, 255, 255, .7);
+  border-radius: 5px;
+}
+
+.top-slider{
+  max-width: 900px;
+  &__name{
+    max-width: 200px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000;
+    @extend %roboto-700;
+    margin: 15px 0 15px 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  &__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title{
+    color: #000;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 36px;
+    max-width: 500px;
+  }
+  &__img{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 800px;
+    height: 500px;
+    margin: 15px auto 20px;
+  }
+  &__img--bajaj{
+    margin-top: 50px;
+  }
+  &__link{
+    background-color: $link;
+    color: #000;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, .4);
+  }
+}
+
+.slick-dots{
+  padding: 20px 0 10px;
+  display: flex;
+  justify-content: center;
+  li{
+    padding: 0 3px;
+    button{
+      padding: 0;
+      font-size: 0;
+      background-color: transparent;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #ccc;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: $link;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    &.slick-active{
+      button{
+        border-color: $link;
+        &::before{
+          background-color: $link;
+        }
+      }
+    }
+  }
+}
+
+.mid-slider{
+  padding: 50px 0;
+  &__name{
+    max-width: 120px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000;
+    @extend %roboto-700;
+    margin: 15px 0 15px 20px;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
 
 
 
