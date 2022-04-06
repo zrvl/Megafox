@@ -3,13 +3,15 @@ $(function() {
     arrows: false,
     dots: true,
     autoplay: true,
-    speed: 1000,
+    autoplaySpeed: 2000,
   })
-  $('.mid-slider__inner').slick({
-    arrows: false,
-    dots: true,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    speed: 1000,
+  $('.product-items').slick({
+    infinite: false,
+    speed: 200,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: true,
+    prevArrow: '<i class="fa-solid fa-arrow-left-long"></i>',
+    nextArrow: '<i class="fa-solid fa-arrow-right-long"></i>'
   })
 })
