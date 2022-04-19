@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__top-phone">
+          <a class="header__top-phone--link" href="tel:0507795515">
+            <svg class="header__top-phone--icon">
+              <use xlink:href="images/sprite.svg#phone"></use>
+            </svg>+380507795515</a>
+        </div>
+        <nav class="menu-top">
+          <ul class="menu-top__list">
+            <li class="menu-top__list-item">
+              <a class="menu-top__list-link" href="#">
+                <svg class="menu-top__list-review">
+                  <use xlink:href="images/sprite.svg#rating"></use>
+                </svg>Відгуки
+              </a>
+            </li>
+            <li class="menu-top__list-item">
+              <a class="menu-top__list-link" href="#">
+                <svg class="menu-top__list-time">
+                  <use xlink:href="images/sprite.svg#time"></use>
+                </svg>
+                Графік роботи
+                <ul class="menu-top__list-items">
+                  <li class="menu-top__list-items--time">Пн 09:00 - 17:00</li>
+                  <li class="menu-top__list-items--time">Вт 09:00 - 17:00</li>
+                  <li class="menu-top__list-items--time">Ср 09:00 - 17:00</li>
+                  <li class="menu-top__list-items--time">Чт 09:00 - 17:00</li>
+                  <li class="menu-top__list-items--time">Пт 09:00 - 17:00</li>
+                  <li class="menu-top__list-items--time">Сб 08:00 - 16:30</li>
+                  <li class="menu-top__list-items--time">Нд 08:00 - 16:30</li>
+                </ul>
+              </a>
+            </li>
+            <li class="menu-top__list-item">
+              <a class="menu-top__list-link" href="#">
+                <svg class="menu-top__list-user">
+                  <use xlink:href="images/sprite.svg#user"></use>
+                </svg></a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+      <div class="header__middle">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo/logo.svg" alt="logo">
+        </a>
+        <div class="header__middle-search">
+          <input class="header__middle-search--input" placeholder="Пошук по каталогу" />
+          <button class="header__middle-search--btn">
+            <svg class="header__middle-search--icon">
+              <use xlink:href="images/sprite.svg#search1"></use>
+            </svg>
+          </button>
+        </div>
+        <button class="header__middle-carts">
+          <svg class="header__middle-cart">
+            <use xlink:href="images/sprite.svg#carts"></use>
+          </svg>
+          кошик:
+        </button>
+      </div>
+      <div class="header__bottom">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item menu__list-item--home">
+              <a class="menu__list-link" href="#">
+                <svg class="menu__list-link--home">
+                  <use xlink:href="images/sprite.svg#home"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Каталог</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Статті</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Оплата і доставка</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Обмін та повернення</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="shop">
+      <div class="container">
+        <div class="shop__inner">
+          <div class="shop__filters">
+            <nav class="shop-menu">
+              <h4 class="shop-menu__category shop-menu__list-item">
+                КАТЕГОРІЇ
+              </h4>
+              <button class="shop-menu__btn">-</button>
+              <ul class="shop-menu__list">
+                <li class="shop-menu__list-item">
+                  <a class="shop-menu__list-item--link" href="#">МОТОЦИКЛИ</a>
+                </li>
+                <li class="shop-menu__list-item">
+                  <a class="shop-menu__list-item--link" href="#">КВАДРОЦИКЛИ</a>
+                </li>
+                <li class="shop-menu__list-item">
+                  <a class="shop-menu__list-item--link" href="#">МОТОБЛОКИ</a>
+                </li>
+                <li class="shop-menu__list-item">
+                  <a class="shop-menu__list-item--link" href="#">ТРАКТОРИ</a>
+                </li>
+                <li class="shop-menu__list-item">
+                  <a class="shop-menu__list-item--link" href="#">ПРИЧІПИ</a>
+                </li>
+                <li class="shop-menu__list-item">
+                  <a class="shop-menu__list-item--link" href="#">НАВІСНЕ ОБЛАДНАННЯ</a>
+                </li>
+                <li class="shop-menu__list-item">
+                  <a class="shop-menu__list-item--link" href="#">НАВІСНЕ ОБЛАДНАННЯ ДЛЯ ТРАКТОРІВ</a>
+                </li>
+                <li class="shop-menu__list-item">
+                  <a class="shop-menu__list-item--link" href="#">ВЕЛОСИПЕДИ</a>
+                </li>
+                <li class="shop-menu__list-item">
+                  <a class="shop-menu__list-item--link" href="#">КОФРИ</a>
+                </li>
+                <li class="shop-menu__list-item">
+                  <a class="shop-menu__list-item--link" href="#">ЗАПЧАСТИНИ ДЛЯ МОТОБЛОКІВ/ТРАКТОРІВ</a>
+                </li>
+                <li class="shop-menu__list-item">
+                  <a class="shop-menu__list-item--link" href="#">РЕЗИНА ДО МОТОБЛОКІВ</a>
+                </li>
+                <li class="shop-menu__list-item">
+                  <a class="shop-menu__list-item--link" href="#">ДВИГУНИ</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="shop-contacts">
+              <h4 class="shop-contacts__title">КОНТАКТИ</h4>
+              <ul class="shop-contacts__list">
+                <li class="shop-contacts__list-item">
+                  <a class="shop-contacts__list-dot" href="https://goo.gl/maps/vWSDi8yNGwF74stY9">
+                    <svg class="shop-contacts__dot">
+                      <use xlink:href="images/sprite.svg#dot"></use>
+                    </svg>м. Кропивницький вул. Садова 79</a>
+                </li>
+                <li class="shop-contacts__list-item">
+                  <a class="shop-contacts__list-phone" href="tel:0507795515">
+                    <svg class="shop-contacts__phone">
+                      <use xlink:href="images/sprite.svg#phone"></use>
+                    </svg>+380507795515 Войтович Е.О</a>
+                </li>
+                <li class="shop-contacts__list-item">
+                  <a class="shop-contacts__list-phone" href="tel:0507794799">
+                    <svg class="shop-contacts__phone--icon">
+                      <use xlink:href="images/sprite.svg#phone"></use>
+                    </svg>+380507794799 Войтович Е.О</a>
+                </li>
+                <li class="shop-contacts__list-item">
+                  <a class="shop-contacts__list-mail" href="mailto:ua.megafox@gmail.com">
+                    <svg class="shop-contacts__mail">
+                      <use xlink:href="images/sprite.svg#email"></use>
+                    </svg>ua.megafox@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-top__item">
+          <h4 class="title">Розділи сайту</h4>
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Головна</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Каталог</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Статті</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Оплата і доставка</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Обмін та повернення</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item">
+          <h4 class="title">Посилання</h4>
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Оплата і доставка</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Обмін та повернення</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Особистий кабінет</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Персональна інформація</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Мої замовлення</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item">
+          <h4 class="title">Контактна інформація</h4>
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-dot" href="https://goo.gl/maps/vWSDi8yNGwF74stY9">
+                <svg class="footer-top__dot">
+                  <use xlink:href="images/sprite.svg#dot"></use>
+                </svg>м. Кропивницький вул. Садова 79</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-phone" href="tel:0507795515">
+                <svg class="footer-top__phone">
+                  <use xlink:href="images/sprite.svg#phone"></use>
+                </svg>+380507795515</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-phone" href="tel:0507794799">
+                <svg class="footer-top__phone--icon">
+                  <use xlink:href="images/sprite.svg#phone"></use>
+                </svg>+380507794799</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-mail" href="mailto:ua.megafox@gmail.com">
+                <svg class="footer-top__mail">
+                  <use xlink:href="images/sprite.svg#email"></use>
+                </svg>ua.megafox@gmail.com</a>
+            </li>
+          </ul>
+          <h4 class="footer-top__item-title title">Приймаємо до сплати</h4>
+          <svg class="footer-top__visa">
+            <use xlink:href="images/sprite.svg#visa"></use>
+          </svg>
+          <svg class="footer-top__mastercard">
+            <use xlink:href="images/sprite.svg#mastercard"></use>
+          </svg>
+        </div>
+        <div class="footer-top__item">
+          <h4 class="footer-top__item-title title">Ми в соціальних мережах</h4>
+          <a class="footer-top__list-inst" href="https://www.instagram.com/megafox.store/">
+            <svg height="25px" viewBox="0 0 512 512" width="25px">
+              <g id="_x36_2-instagram">
+                <g>
+                  <linearGradient gradientUnits="userSpaceOnUse" id="SVGID_1_" x1="65.9038" x2="446.3573" y1="444.4766"
+                    y2="64.0231">
+                    <stop offset="0" style="stop-color:#FFC107" />
+                    <stop offset="0.2211" style="stop-color:#F98D1C" />
+                    <stop offset="0.5137" style="stop-color:#F1423B" />
+                    <stop offset="0.8329" style="stop-color:#B93088" />
+                    <stop offset="0.9944" style="stop-color:#9C27B0" />
+                  </linearGradient>
+                  <path
+                    d="M343.193,22H168.32C87.854,22,23,86.863,23,166.958v174.079    C23,421.137,87.854,487,168.32,487h174.873C423.66,487,490,421.137,490,341.037V166.958C490,86.863,423.66,22,343.193,22z     M446,341.037C446,397.025,399.438,443,343.193,443H168.32C112.071,443,66,397.025,66,341.037V166.958    C66,110.973,112.071,65,168.32,65h174.873C399.438,65,446,110.973,446,166.958V341.037z"
+                    style="fill:url(#SVGID_1_);" />
+                  <linearGradient gradientUnits="userSpaceOnUse" id="SVGID_2_" x1="173.5107" x2="338.0032" y1="336.2451"
+                    y2="171.7527">
+                    <stop offset="0" style="stop-color:#FFC107" />
+                    <stop offset="0.2211" style="stop-color:#F98D1C" />
+                    <stop offset="0.5137" style="stop-color:#F1423B" />
+                    <stop offset="0.8329" style="stop-color:#B93088" />
+                    <stop offset="0.9944" style="stop-color:#9C27B0" />
+                  </linearGradient>
+                  <path
+                    d="M255.756,137.947c-64.382,0-116.581,51.961-116.581,116.055    c0,64.085,52.199,116.045,116.581,116.045c64.383,0,116.58-51.96,116.58-116.045C372.336,189.908,320.139,137.947,255.756,137.947    z M255.756,326.531c-40.164,0-72.86-32.551-72.86-72.529c0-40.016,32.696-72.534,72.86-72.534    c40.162,0,72.861,32.519,72.861,72.534C328.617,293.98,295.918,326.531,255.756,326.531z"
+                    style="fill:url(#SVGID_2_);" />
+                  <linearGradient gradientUnits="userSpaceOnUse" id="SVGID_3_" x1="370.1182" x2="392.037" y1="140.2031"
+                    y2="118.2843">
+                    <stop offset="0" style="stop-color:#FFC107" />
+                    <stop offset="0.2211" style="stop-color:#F98D1C" />
+                    <stop offset="0.5137" style="stop-color:#F1423B" />
+                    <stop offset="0.8329" style="stop-color:#B93088" />
+                    <stop offset="0.9944" style="stop-color:#9C27B0" />
+                  </linearGradient>
+                  <path
+                    d="M381.08,113.779c-8.581,0-15.538,6.924-15.538,15.463c0,8.54,6.957,15.467,15.538,15.467    c8.573,0,15.532-6.927,15.532-15.467C396.612,120.703,389.653,113.779,381.08,113.779z"
+                    style="fill:url(#SVGID_3_);" />
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a class="footer-top__list-facebook" href="#">
+            <svg class="footer-top__facebook">
+              <use xlink:href="images/sprite.svg#facebook"></use>
+            </svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/04070cd580.js" crossorigin="anonymous"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
